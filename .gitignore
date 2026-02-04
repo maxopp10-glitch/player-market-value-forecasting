@@ -1,0 +1,107 @@
+# -------------------------
+# Python / bytecode
+# -------------------------
+__pycache__/
+*.py[codz]
+*$py.class
+*.pyc
+
+# -------------------------
+# Virtual environments
+# -------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# -------------------------
+# Jupyter
+# -------------------------
+.ipynb_checkpoints/
+.ipynb_checkpoints
+
+# -------------------------
+# VS Code
+# -------------------------
+.vscode/
+
+# -------------------------
+# Secrets / env files
+# -------------------------
+.env
+.envrc
+
+# -------------------------
+# OS files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Local data (do not push raw datasets)
+# -------------------------
+data/
+
+# -------------------------
+# Packaging / build
+# -------------------------
+build/
+dist/
+develop-eggs/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# -------------------------
+# Tests / coverage
+# -------------------------
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+
+# -------------------------
+# Type checkers / linters
+# -------------------------
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# -------------------------
+# PyInstaller
+# -------------------------
+*.manifest
+*.spec
+
+# -------------------------
+# Misc
+# -------------------------
+.pypirc
+__pypackages__/
