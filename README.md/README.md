@@ -56,6 +56,22 @@ Overall, the project emphasizes **methodological rigor, interpretability, and re
 
 ---
 
+## Why This Matters
+
+In real-world scenarios, player valuation impacts:
+- Investment decisions by football clubs
+- Contract negotiations by agents
+- Risk assessment in player acquisition
+
+Accurate forecasting of market value changes helps stakeholders:
+- Identify undervalued players
+- Anticipate performance trends
+- Reduce financial risk
+
+This project focuses not only on prediction, but on building a reliable and realistic modeling framework for time-dependent data.
+
+---
+
 ## Player Market Value Forecasting (Transfermarkt)
 
 This project applies **Machine Learning to time-series data** to model and predict the **future percentage change in football players’ market value**, using historical data from Transfermarkt.
@@ -93,6 +109,19 @@ Beyond prediction, the project aims to answer:
 **Granularity:**
 - Time-series observations per player  
 - Each row represents a historical market valuation  
+
+---
+
+## Data Quality Decisions
+
+Special attention was given to data reliability and consistency throughout the pipeline:
+
+- Removal of inconsistent and invalid records  
+- Strict enforcement of chronological ordering  
+- Prevention of future information leakage  
+- Validation of feature construction  
+
+**Key principle:** No model is better than the data it is built on.
 
 ---
 
@@ -480,6 +509,19 @@ The model is suitable for:
 
 ---
 
+## Production Considerations
+
+If deployed in a real-world environment, the following improvements would be implemented:
+
+- Automated data pipelines (ETL / ELT)
+- Continuous model retraining with new data
+- Monitoring for model drift
+- Integration with external data sources (injuries, transfers, news)
+
+This highlights the gap between experimental models and production-ready systems, and the steps required to bridge it.
+
+---
+
 ### ⚠️ Limitations and Non-Recommended Uses
 
 The model **should NOT** be used for:
@@ -501,6 +543,7 @@ Large valuation jumps are often driven by **exogenous events** (injuries, transf
 
 This design choice prioritizes **realism, robustness, and interpretability** over over-optimistic predictive claims.
 
+---
 
 ## Author
 
